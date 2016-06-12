@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:paddingBottom="15dp"
+    android:paddingLeft="15dp"
+    android:paddingTop="15dp" >
+
+    <ImageView
+        android:id="@+id/new_game_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@drawable/icon_def_130" />
+
+    <TextView
+        android:id="@+id/new_game_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/new_game_icon"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/new_game_icon"
+        android:text="游戏名字"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/new_game_size_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/new_game_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/new_game_icon"
+        android:singleLine="true"
+        android:text="游戏大小："
+        android:textColor="#999999"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/new_game_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/new_game_size_text"
+        android:layout_below="@id/new_game_name"
+        android:layout_toRightOf="@id/new_game_size_text"
+        android:text="xxxMB"
+        android:textColor="#999999"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/new_game_update_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/new_game_name"
+        android:layout_below="@id/new_game_size_text"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/new_game_icon"
+        android:singleLine="true"
+        android:text="更新时间："
+        android:textColor="#999999"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/new_game_update_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/new_game_update_text"
+        android:layout_below="@id/new_game_size_text"
+        android:layout_toRightOf="@id/new_game_update_text"
+        android:text="2016-5-23"
+        android:textColor="#999999"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/new_game_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/new_game_name"
+        android:layout_below="@id/new_game_update_text"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/new_game_icon"
+        android:text="游戏详情"
+        android:textColor="#999999"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/new_game_download"
+        android:layout_width="55dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/button_download"
+        android:text="下载"
+        android:textColor="#ffffff"
+        android:textSize="15dp" />
+
+</RelativeLayout>

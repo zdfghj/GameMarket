@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="#FF833F" >
+
+    <TextView
+        android:id="@+id/title_search_text"
+        android:layout_width="280dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="5dp"
+        android:background="#FFFFFF" />
+
+    <ImageView
+        android:id="@+id/title_search"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:background="#FFFFFF"
+        android:src="@drawable/search_search_btn" />
+
+    <ImageButton
+        android:id="@+id/title_scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/title_search_text"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="45dp"
+        android:background="#ffffff"
+        android:src="@drawable/icon_scan_def" />
+
+    <ImageButton
+        android:id="@+id/title_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/title_search_text"
+        android:layout_alignParentRight="true"
+        android:background="#00ffffff"
+        android:src="@drawable/download_arrow_btn" />
+
+</RelativeLayout>
