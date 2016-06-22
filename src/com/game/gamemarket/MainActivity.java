@@ -3,7 +3,6 @@ package com.game.gamemarket;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.download.manager.MyDownloadManager;
 import com.frag.classifyfragment.ClassifyFragment;
 import com.frag.indexfragment.IndexFragment;
 import com.frag.managefragment.ManageFragment;
@@ -12,7 +11,6 @@ import com.game.search.SearchGameInfo;
 
 import android.content.Intent;
 import android.graphics.BitmapFactory;
-import android.graphics.Matrix;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -132,14 +130,14 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 			changeView(3);
 			break;
 		case R.id.title_search_text:// 进入搜索界面
-			intent = new Intent(this, SearchGameInfo.class);  
+			intent = new Intent(this, SearchGameInfo.class);
 			startActivity(intent);
 			break;
 		case R.id.title_scan:// 进入二维码搜索
 
 			break;
 		case R.id.title_download:// 进入下载管理
-			intent = new Intent(this, MyDownloadManager.class);
+			intent = new Intent(this, DownloadList.class);
 			startActivity(intent);
 			break;
 		}
@@ -165,15 +163,15 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 		getWindowManager().getDefaultDisplay().getMetrics(dm);
 		int screenW = dm.widthPixels;// 获取分辨率宽度
 		offset = (screenW / 4 - bmpW) / 2;// 计算偏移量
-//		Matrix matrix = new Matrix();
-//		matrix.postTranslate(offset, 0);
-//		System.out.println(offset + "=====================================");
-//
-//		System.out.println(matrix);
-//		moveBarImg.setImageMatrix(matrix);// 设置动画初始位置
+		// Matrix matrix = new Matrix();
+		// matrix.postTranslate(offset, 0);
+		// System.out.println(offset + "=====================================");
+		//
+		// System.out.println(matrix);
+		// moveBarImg.setImageMatrix(matrix);// 设置动画初始位置
 		moveBarImg.setX(offset);
-//		 Animation animation = new TranslateAnimation(offset, offset, 0, 0);
-//		 moveBarImg.startAnimation(animation);
+		// Animation animation = new TranslateAnimation(offset, offset, 0, 0);
+		// moveBarImg.startAnimation(animation);
 
 	}
 
